@@ -1,0 +1,443 @@
+/* основной цвет текста 757575 */
+/* основной цвет заголовков  212121 */
+/* основной цвет фона FFFFFF */
+/* цвет ссылок и кнопок 2196F3 */
+/* цвет фона герой, футтер 2F303A */
+/* цвет фона секций, кнопок F5F4FA */
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --button-link-color: #2196f3;
+  --hero-bgc: #2f303a;
+  --section-bgc: #f5f4fa;
+  --main-bg-color: #ffffff;
+  --main-text-color: #ffffff;
+}
+body {
+  background-color: var(--main-bg-color)
+  color: var(--primary-text-color);
+  position: relative;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin: 0;
+  width: 1600px;
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+/* Page header*/
+
+
+h1 {
+  color: var(--primary-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+}
+
+/* Кнопка */
+.button-on {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  margin-top: 30px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  color: var(--main-text-color);
+  background: #2196f3;
+}
+
+.container {
+  margin-left: 215px;
+  padding: 0 15px;
+  width: 1200px;
+}
+.main-nav{
+display: flex;
+padding-left: 93px;
+top: 32px;
+vertical-align: middle;
+}
+.main-navig {
+width: 1800px;
+height: 80px;
+padding-left: 15px;
+padding-right: 15px;
+  
+  display: flex;
+  align-items: center;
+  top: 32px;
+  vertical-align: middle;
+}
+.navigation{
+  display: flex;
+  vertical-align: middle;
+}
+.item {
+margin-top: 32px;
+margin-bottom: 32px;
+vertical-align: middle;
+display: inline-block;
+
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+}
+.item a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  color: var(--title-text-color);
+}
+.main-nav .item {
+  margin-right: 50px; 
+}
+
+.contacts{
+  display: flex;
+  margin-left: 331px;
+  margin-right: 215px;
+  vertical-align: middle;
+}
+.contacts a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.contacts .item + .item {
+  margin-left: 50px;
+}
+.elements{
+  text-decoration: none;
+}
+.logotyp {
+  width: 145px;
+  height: 31px;   
+
+  margin-left: 215px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  padding-top: 14px;
+
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  align-items: center;
+  vertical-align: bottom;
+  display: inline-block;
+  color: var(--button-link-color);
+}
+.logotyp span {
+  color: #000000;
+}
+.brg-log {
+  color: var(--main-text-color); 
+}
+/* Hero */
+.hero{
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+}
+.hero-title {
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+
+  text-align: center;
+
+  color: var(--main-text-color);
+}
+
+/* Описание работы */
+.future {
+  padding: 94px 0;
+  margin-left: 215px;
+}
+.future .characteristics {
+  display: flex;
+}
+.future .elements:not(:last-child) {
+margin-right: 30px;
+}
+.future .elements {
+  width: 270px;
+}
+.future .subtittle {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+.future .discription {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-text-color);
+}
+
+/* чем мы занимаемся */
+.working {
+  padding-bottom: 94px;
+  margin: 0;
+ 
+}
+.working .working-links {
+  display: flex;
+}
+.working .tittle {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.working .link:not(:last-child) {
+margin-right: 30px;
+}
+.our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--section-bgc);
+}
+
+.our-team .team {
+  display: flex;
+}
+
+.link-photo:not(:last-child) {
+  margin-right: 30px;
+}
+.link-photo {
+  background-color: var(--main-bg-color);
+  width: 270px;
+  min-height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+/* наша команда */
+.our-team .name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+.our-team .prof {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+.port-main {
+  width: 1600px;
+  height: 1584px;
+}
+.tittle{
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.photo {
+  
+  width: 270px;
+  height: 260px;
+  left: 215px;
+  top: 1635px;
+  border-radius: 0px;
+}
+.teaming {
+  background-color: var(--section-bgc);
+}
+.menu a {
+  font-weight: 500;
+}
+/* Footer */
+
+footer{
+  width: 1600px;
+  height: 252px;
+  padding-bottom: 60px;
+  padding-top: 60px; 
+  background-color: var(--hero-bgc);
+}
+.logotyp-footer {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--button-link-color);
+  text-decoration: none;
+}
+.city {
+  margin: 0;
+  margin-left: 215px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--main-text-color);
+}
+.contact-info {
+  margin: 0 0 0px;
+}
+
+.contacts-footer {
+  display: block;
+  padding-bottom: 60px;
+  /* margin-top: 0;
+  margin-bottom: 60px; */
+  margin-left: 175px;
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+
+.contacts-footer a {
+  color: rgba(255, 255, 255, 0.6);
+  
+}
+footer,
+.hero {
+  background-color: var(--hero-bgc);
+}
+
+.logotyp-footer {
+  width: 145px;
+  height: 31px;   
+
+  margin-left: 215px;
+  margin-right: 1240px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  align-items: center;
+  vertical-align: bottom;
+  display: inline-block;
+  color: var(--button-link-color);
+}
+
+/*стили для портфолио */
+
+.filtres {
+  padding: 94px 0;
+}
+.filtres {
+  display: flex;
+  padding-bottom: 34px;
+  justify-content: center;
+}
+.filtres .buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.proj {
+  width: 370px;
+  min-height: 404px;
+  border: 1px solid #eeeeee;
+  
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.proj:nth-child(-n + 3) {
+  margin-bottom: 0;
+}
+.proj:hover:hover,
+.proj:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.filtre .disc {
+  padding: 20px 24px;
+}
+.filtre .filtre-button:not(:last-child) {
+  margin-right: 8px;
+} 
+
+.second-btn:hover,
+.second-btn:focus {
+  background-color: var(--button-link-color);
+  color: var(--main-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.filtres .work-expirience-tittle {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-style: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.filtres .work-expirience-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-style: 16px;
+  line-height: 1.87;
+  color: var(--primary-text-color);
+}
+
+.navigation a:hover,
+.contacts a:hover,
+.navigation a:focus,
+.contacts a:focus {
+  color: var(--button-link-color);
+}
