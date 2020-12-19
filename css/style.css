@@ -336,10 +336,16 @@ footer .logotyp span {
 .work-link {
   margin-bottom: 30px;
   margin-right: 30px;
-
+  flex-basis: calc(100% / 3 - 60px);
   border: 1px solid #eeeeee;
 }
-
+.work-expirience {
+  margin-bottom: -30px;
+  margin-right: -30px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 94px;
+}
 .work-expirience-tittle {
   margin-bottom: 4px;
 
@@ -372,12 +378,6 @@ footer .logotyp span {
   color: var(--button-link-color);
 }
 
-.work-expirience {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: -30px;
-  margin-right: -30px;
-}
 .work-expirience:hover,
 .work-expirience:focus {
   color: #ffffff;
