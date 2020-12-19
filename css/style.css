@@ -39,7 +39,7 @@ body {
   font-family: "Roboto";
 }
 .container {
-  width: 1200px;
+  width: 1300px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -53,11 +53,13 @@ body {
 .header > .container {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logotyp {
   margin-right: 93px;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
 
   font-family: "Raleway";
   font-style: normal;
@@ -68,6 +70,9 @@ body {
 }
 .logotyp span {
   color: #000000;
+}
+.footer-logo {
+  margin-bottom: 20px;
 }
 .navigation .nav-link-active {
   color: var(--button-link-color);
@@ -84,6 +89,9 @@ body {
 .main-nav > .item:not(:last-child) {
   margin-right: 50px;
 }
+.tell {
+  margin-right: 50px;
+}
 .nav-link {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -98,9 +106,7 @@ body {
   font-size: 14px;
   margin-left: auto;
 }
-.tel {
-  margin-right: 50px;
-}
+
 /*Hero*/
 
 .hero-title {
@@ -187,6 +193,10 @@ h3 {
 .tittle {
   margin-bottom: 50px;
   text-align: center;
+  font-size: 36px;
+  line-height: 42px;
+
+  letter-spacing: 0.03em;
 }
 .working {
   display: block;
@@ -202,6 +212,7 @@ h3 {
 
   background-color: var(--section-bgc);
 }
+
 .team {
   display: flex;
 }
@@ -216,14 +227,17 @@ h3 {
 }
 .photo {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
+.command {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .name {
   margin-bottom: 10px;
 }
-.prof {
-  margin-bottom: 30px;
-}
+
 .name,
 .prof {
   font-size: 16px;
@@ -234,7 +248,7 @@ h3 {
 /*footer*/
 footer .container {
   padding-top: 60px;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   display: inline-block;
@@ -251,7 +265,6 @@ footer .logotyp span {
 .contacts-footer {
   display: block;
   line-height: 1.71;
-  margin-bottom: 9px;
 }
 .adress-footer {
   font-style: normal;
@@ -259,6 +272,7 @@ footer .logotyp span {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  margin-bottom: 9px;
 }
 
 .contacts-footer a {
@@ -270,9 +284,12 @@ footer .logotyp span {
   line-height: 24px;
   letter-spacing: 0.03em;
 }
-.contacts-footer > .contacts:nth-child(2n) {
+.contacts-footer {
   display: inline-block;
-  margin-bottom: 60px;
+}
+.tel {
+  margin-bottom: 9px;
+  margin-top: 0;
 }
 
 /*portfolio*/
@@ -318,13 +335,9 @@ footer .logotyp span {
 }
 .work-link {
   margin-bottom: 30px;
-
-  width: calc((100%-2 * 30px) / 3);
+  margin-right: 30px;
 
   border: 1px solid #eeeeee;
-}
-.work-link img {
-  margin-bottom: 20px;
 }
 
 .work-expirience-tittle {
@@ -339,14 +352,17 @@ footer .logotyp span {
 }
 
 .work-expirience-text {
-  margin-bottom: 20px;
-
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.work-expirience-tittle,
+.work-expirience-text {
+  text-align: start;
+  margin-left: 24px;
 }
 
 .navigation a:hover,
@@ -359,6 +375,8 @@ footer .logotyp span {
 .work-expirience {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-right: -30px;
 }
 .work-expirience:hover,
 .work-expirience:focus {
