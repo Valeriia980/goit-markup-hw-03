@@ -77,13 +77,13 @@ body {
 }
 .navigation .nav-link-active {
   color: var(--button-link-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
+}
+.nav-link-active {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .navigation .nav-link {
   color: var(--title-text-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .contacts a {
   color: var(--primary-text-color);
@@ -368,12 +368,12 @@ footer .logotyp span {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.work-expirience-tittle,
-.work-expirience-text {
-  text-align: start;
-  margin-left: 24px;
+.command-work {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 24px;
 }
-
+}
 .navigation a:hover,
 .contacts a:hover,
 .navigation a:focus,
